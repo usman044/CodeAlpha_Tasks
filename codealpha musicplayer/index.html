@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/Swaggers (6).png" type="image/x-icon">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script
+      src="https://kit.fontawesome.com/0b5a942e8d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="headerRes">
+        <p>Hey Buddy !</p>
+        <i class="fa-solid fa-gear setting" onclick="setting()"></i>
+      </div>
+      <!-- ====================================//header//==================================== -->
+      <div class="header">
+        <div class="h-logo">
+          <img src="./images/Swaggers (6).png" />
+          <p>Get App</p>
+        </div>
+        <div class="h-search">
+          <div class="home">
+            <i class="fa-solid fa-house"></i>
+            <p>Home</p>
+          </div>
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <p>Search</p>
+            <input type="text " placeholder="What do you want to play?" />
+          </div>
+        </div>
+        <div class="h-coll-res">
+          <img src="./images/col-res.png"/>
+          <p>Your Library</p>
+        </div>
+        <div class="h-explore">
+          <button>Explore Premium</button>
+        </div>
+        <div class="h-install">
+          <i class="fa-sharp fa-regular fa-circle-down"></i>Install App
+        </div>
+        <div class="h-profile">
+          <i class="fa-regular fa-bell bell"></i>
+          <button class="pro">U</button>
+        </div>
+      </div>
+
+      <!-- ====================================//main-container//==================================== -->
+
+      <div class="mainContainer">
+        <div class="left-main">
+          <div class="left-inner-head">
+            <div class="h-img">
+              <img src="./images/collapse.png" />
+              <h3>Your Library</h3>
+            </div>
+            <div class="h-icon">
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </div>
+          </div>
+          <div class="left-inner-down1">
+            <div class="down">
+              <h3>Create your first playlist</h3>
+              <p>it's easy, we'll help you</p>
+              <button>Create playlist</button>
+            </div>
+          </div>
+          <div class="left-inner-down2">
+            <div class="down">
+              <h4>Let's find some podcasts to follow</h4>
+              <p>we'll keep you updated on new <br />episodes</p>
+              <button>Browser podcasts</button>
+            </div>
+          </div>
+        </div>
+        <div class="center-main">
+          <div class="center-content">
+            <div class="center-head">
+              <button class="all-button">All</button>
+              <button class="mu-button">Music</button>
+            </div>
+            <div class="center-head2">
+              <h2>Recommended for you</h2>
+              <p>Show all</p>
+            </div>
+            <div class="scroll-wrapper">
+              <div class="scroll-btn left" onclick="scrollLeftBtn()">
+                <i class="fa-solid fa-circle-chevron-left"></i>
+              </div>
+              <div class="songs">
+                <div class="song-1 source" onclick="playSong(this)">
+                  <audio class="mySong" src="./songs/droptop.mp3"></audio>
+                  <img src="./images/droptop.png" />
+                  <p>DropTop , AP Dhillon</p>
+                </div>
+                <div class="song-1 source" onclick="playSong(this)">
+                  <audio class="mySong" src="./songs/fasle.mp3"></audio>
+                  <img src="./images/fasle.song.png" />
+                  <p>Faasle , Aditya Rikhari</p>
+                </div>
+                <div class="song-1 source" onclick="playSong(this)">
+                  <audio class="mySong" src="./songs/regrets.mp3"></audio>
+                  <img src="./images/regret-song.png" />
+                  <p>REGRETS , Jevin Gill, Umair, Talha Anjum</p>
+                </div>
+                <div class="song-1 source" onclick="playSong(this)">
+                  <audio class="mySong" src="./songs/52bar.mp3"></audio>
+                  <img src="./images/52bars-song.png" />
+                  <p>52 Bars , Karan Aujla</p>
+                </div>
+                <div class="song-1 source" onclick="playSong(this)">
+                  <audio class="mySong" src="./songs/kademilke.mp3"></audio>
+                  <img src="./images/kade.png" />
+                  <p>Admirin'You , Karan Aujla</p>
+                </div>
+                <div class="song-1 source" onclick="playSong(this)">
+                  <audio class="mySong" src="./songs/truestory.mp3"></audio>
+                  <img src="./images/true.png" />
+                  <p>True Stories , AP Dhillon</p>
+                </div>
+                <div class="song-1 source" onclick="playSong(this)">
+                  <audio class="mySong" src="./songs/Agency.mp3"></audio>
+                  <img src="./images/agency.png" />
+                  <p>Agency , Talha Anjum</p>
+                </div>
+                <div class="song-1 source" onclick="playSong(this)">
+                  <audio class="mySong" src="./songs/introduction.mp3"></audio>
+                  <img src="./images/intro.png" />
+                  <p>Introduction , Faris Shafi</p>
+                </div>
+                <div class="song-1 source" onclick="playSong(this)">
+                  <audio class="mySong" src="./songs/Miamor.mp3"></audio>
+                  <img src="./images/mi_amor.png" />
+                  <p>Mi Amor , Sharn</p>
+                </div>
+                
+              </div>
+              <div class="scroll-btn right" onclick="scrollRightBtn()">
+                <i class="fa-solid fa-circle-chevron-right"></i>
+              </div>
+            </div>
+            <div class="center-head2">
+              <h2>To get you started</h2>
+              <p>Show all</p>
+            </div>
+            <div class="scroll-wrapper">
+              <div class="scroll-btn left" onclick="scrollLeftBtn()">
+                <i class="fa-solid fa-circle-chevron-left"></i>
+              </div>
+              <div class="songs">
+                <div class="song-1 source" onclick="playSong(this)">
+                  <audio class="mySong" src="./songs/kademilke.mp3"></audio>
+                  <img src="./images/kade.png" />
+                  <p>Admirin'You , Karan Aujla</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-main" id="content" onclick="openMenu()">
+          <i class="fa-solid fa-chevron-left left-arrow"></i>
+          <div class="content">
+            <div class="right-head">
+              <h3>Chaye & Chill</h3>
+              <i class="fa-solid fa-xmark cross-mark"></i>
+            </div>
+            <!-- call img here -->
+            <div class="right-center-image" id="target"></div>
+            <div class="right-text">
+              <p id="TarSongName"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ====================================//footer//==================================== -->
+
+      <div class="footer">
+        <!-- <div class="footer-left"> -->
+        <div class="footerImage" onclick="document.getElementsByClassName('footer').style.height = '500px'">
+          <!-- call img here -->
+          <div id="TarFootImg"></div>
+          <p id="TarFootTxt"></p>
+        </div>
+        
+        <div class="footer-center">
+          <i class="fa-solid fa-backward-step next-song"  onclick="previousSong()"></i>
+          <i onclick="stopSong(this)" class="fa-solid fa-circle-pause stopbtn" ></i>
+          <i class="fa-solid fa-forward-step next-song" onclick="nextSong()"></i>
+        </div>
+        <div class="full">
+          <span id="current-time">0:00</span>
+          <div class="footer-process-bar" onclick="seek(event)">
+            <div id="progress-bar"></div>
+          </div>
+          <span id="total-time">0:00</span>
+        </div>
+        <!-- </div> -->
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
